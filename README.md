@@ -13,13 +13,18 @@ The project allows users to search for AI tools based on their requirements and 
 
 ## Project Structure
 AI_Ttools
+
 ├── static/
+
 │   ├── styles.css          # CSS styles for the pages
 │   ├── tool.css            # CSS for tool detail pages
+
 ├── templates/
+
 │   ├── index.html          # Search page template
 │   ├── result.html         # Search result page template
 │   ├── tool_detail.html    # Tool detail page template
+
 ├── app.py                  # Main server script (Flask or any other framework used)
 ├── tools.json              # JSON file containing AI tools data
 └── README.md               # Project documentation (this file)
