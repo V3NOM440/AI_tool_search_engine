@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Search Results</title>
+    <link rel="stylesheet" href="/static/result.css">
+</head>
+<body>
+	<div class="container">
+    <h1>Search Results</h1>
+    <div class="categories-container">
+        <div class="category">
+            <h2>Free Tools</h2>
+            <ul class="tools-list">
+                {% for tool in free_tools %}
+                <li class="tool-card">
+                    <a href="/tool/{{ tool['name'] }}">{{ tool['name'] }}</a>
+                    <p>{{ tool['description'] }}</p>
+                </li>
+                {% else %}
+                <li>No free tools found.</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="category">
+            <h2>Trial Tools</h2>
+            <ul class="tools-list">
+                {% for tool in trial_tools %}
+                <li class="tool-card">
+                    <a href="/tool/{{ tool['name'] }}">{{ tool['name'] }}</a>
+                    <p>{{ tool['description'] }}</p>
+                </li>
+                {% else %}
+                <li>No trial tools found.</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="category">
+            <h2>Paid Tools</h2>
+            <ul class="tools-list">
+                {% for tool in paid_tools %}
+                <li class="tool-card">
+                    <a href="/tool/{{ tool['name'] }}">{{ tool['name'] }}</a>
+                    <p>{{ tool['description'] }}</p>
+                </li>
+                {% else %}
+                <li>No paid tools found.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <a href="/" class="back-to-search">Back to Search</a>
+</div>
+
+</body>
+</html>

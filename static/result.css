@@ -1,0 +1,187 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1F2937, #3E4C59);
+    color: #F3F4F6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #60A5FA;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-in-out;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #93C5FD;
+    text-align: center;
+}
+
+/* Flexbox Grid for Categories */
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Individual Category Container */
+.category {
+    flex: 1;
+    padding: 15px;
+    background-color: rgba(31, 41, 55, 0.9);
+    border-radius: 8px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Tool Items List */
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tool-card {
+    background-color: rgba(96, 165, 250, 0.2);
+    padding: 15px;
+    width: 180px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.tool-card:hover {
+    background-color: rgba(96, 165, 250, 0.9);
+    transform: scale(1.05);
+}
+
+.tool-card a {
+    color: #60A5FA;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tool-card a:hover {
+    color: #FFFFFF;
+}
+
+.tool-card p {
+    color: #E5E7EB;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Button styling */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Center the container */
+.container {
+    text-align: center;
+}
+a.back-to-search {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.back-to-search:hover {
+    background-color: #60A5FA;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .category {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .tools-list {
+        justify-content: space-between;
+    }
+
+    .tool-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .category {
+        flex: 1 1 100%;
+    }
+
+    .tool-card {
+        width: 100%;
+    }
+}

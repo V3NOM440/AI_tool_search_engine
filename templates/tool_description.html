@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ tool['name'] }}</title>
+    <link rel="stylesheet" href="/static/tool.css">
+</head>
+<body>
+    <div class="tool-container">
+        <h1>{{ tool['name'] }}</h1>
+        <p><strong>Description:</strong> {{ tool['description'] }}</p>
+        <p><strong>Category:</strong> {{ tool['category'] }}</p>
+        <p><strong>URL:</strong> <a href="{{ tool['url'] }}">{{ tool['url'] }}</a></p>
+        <p><strong>Limitations:</strong> {{ tool['limitations'] }}</p>
+
+        <h2>Features</h2>
+        <div class="features">
+            <ul>
+                {% for feature in tool['features'] %}
+                <li class="feature">
+                    <strong>{{ feature['feature'] }}:</strong> {{ feature['description'] }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <a class="back-button" href="/">Back to Search</a>
+    </div>
+</body>
+</html>

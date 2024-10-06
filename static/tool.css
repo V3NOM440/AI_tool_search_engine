@@ -1,0 +1,112 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1F2937, #3E4C59); /* Dark gradient for background */
+    color: #ffffff; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container for the tool details */
+.tool-container {
+    max-width: 800px;
+    background: rgba(31, 41, 55, 0.9);; /* Dark semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    padding: 40px; /* Ample padding for spaciousness */
+    margin: 20px;
+    transition: transform 0.3s ease; /* Animation effect on hover */
+}
+
+.tool-container:hover {
+    transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.8em;
+    color: rgba(96, 165, 250, 1); /* Main color for headings */
+    margin-bottom: 15px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Subheading styles */
+h2 {
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.9); /* Lighter color for subheadings */
+    margin-top: 30px; 
+    margin-bottom: 15px; 
+}
+
+/* Paragraph styles */
+p {
+    line-height: 1.6;
+    margin: 15px 0; 
+    font-size: 1.1em; /* Slightly larger font for readability */
+}
+
+/* Link styles */
+a {
+    color: rgba(96, 165, 250, 1);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease; 
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgba(96, 165, 250, 0.8); /* Darker shade on hover */
+    text-shadow: 0 0 5px rgba(72, 179, 103, 0.5); /* Glow effect on hover */
+}
+
+/* Features section styles */
+.features {
+    margin-top: 20px;
+}
+
+.features ul {
+    padding-left: 20px; /* Indentation for feature list */
+}
+
+.feature {
+    margin-bottom: 20px; 
+}
+
+.feature strong {
+    font-weight: 600; /* Bold feature name */
+}
+
+/* Back button styles */
+.back-button {
+    display: inline-block;
+    margin-top: 40px; 
+    padding: 12px 24px; 
+    background-color: black; /* Black background for button */
+    color: white; /* White text for contrast */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s; 
+}
+
+.back-button:hover {
+    background-color: rgba(50, 50, 50, 1); /* Darker shade on hover */
+    transform: scale(1.05); 
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .tool-container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Smaller font size on mobile */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller font size on mobile */
+    }
+}
