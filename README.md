@@ -7,7 +7,6 @@ The project allows users to search for AI tools based on their requirements and 
 
 - **Search Functionality**: Users can search for AI tools by keywords (e.g., "content creation", "cybersecurity").
 - **Categorized Results**: Tools are categorized into *Free*, *Trial*, and *Paid* versions to make it easier for users to find tools based on availability.
-- **Auto-Suggestions**: Search bar provides auto-suggestions based on the keywords in the tool dataset, helping users find relevant tools faster.
 - **Tool Details**: Each tool has a detailed page that includes the name, description, category, features, URL, and limitations of the tool.
 - **Responsive Design**: The site is fully responsive, adjusting to different screen sizes.
 
@@ -76,8 +75,7 @@ The tools.json file is structured as follows:
 
 Technologies Used:
 HTML/CSS: For structuring and styling the web pages.
-Python/Flask: (or any other framework) for backend functionality.
-Fuzzywuzzy: For providing typo-tolerant search results.
+Python/Flask: for backend functionality.
 JSON: To store and retrieve AI tool data.
 
 Future Improvements:
