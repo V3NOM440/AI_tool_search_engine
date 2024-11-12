@@ -24,7 +24,7 @@ AI_Ttools
 │   ├── result.html         # Search result page template
 │   ├── tool_detail.html    # Tool detail page template
 
-├── app.py                  # Main server script (Flask or any other framework used)
+├── app.py                  # Main server script (Flask framework used)
 ├── tools.json              # JSON file containing AI tools data
 └── README.md               # Project documentation (this file)
 
@@ -37,7 +37,9 @@ How It Works:
 How to Use:
 
 1 - Search for AI Tools: Simply type a keyword into the search bar. The search will show relevant results categorized into free, trial, and paid tools.
+
 2 - View Tool Details: Click on any tool in the search result to see its features, limitations, and a link to the tool's website.
+
 3 - Back to Search: Use the Back to Search button to return to the homepage and perform another search.
 
 Installation:
